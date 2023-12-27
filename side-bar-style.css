@@ -1,0 +1,41 @@
+
+#side-bar{
+    padding: 11px;
+    border-radius: 30px;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-color: rgb(192, 168, 168);
+    z-index: 1;
+    img{
+        position: relative;
+        left: 11px;
+        top:11px;
+        z-index: 2;
+        width: 30px;
+        cursor: pointer;
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+    #side-bar-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    #side-bar-main{
+        margin-top: 11px;
+        font-size: large;
+    }
+    #side-bar-button-box{
+        margin-top: 10px;
+        .side-bar-button{
+            font-size: 20px;
+            border-radius: 11px;
+            cursor: pointer;
+        }
+        .side-bar-button:active{
+            transform: scale(0.9);
+        }
+    }
+}

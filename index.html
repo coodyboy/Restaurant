@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoodyStore</title>
+
+    <link rel="stylesheet" href="side-bar-style.css">
+    <link rel="stylesheet" href="title-style.css">
+    <link rel="stylesheet" href="main-style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pixelify+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pixelify+Sans:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Montserrat:wght@500&family=Pixelify+Sans:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Montserrat:wght@500&family=Noto+Sans&family=Pixelify+Sans:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <aside>
+        <div id="side-bar" style="display: none;">
+            <img src="./cancel.png" alt="" id="close-switch" onclick="hideSidebar()">
+            <div id="side-bar-title">Hello!</div>
+            <div id="side-bar-main">We offer free foods for poor people. For more information click <a href="">this</a>.</div>
+            <div id="side-bar-button-box">
+                <button class="side-bar-button">Food menu</button>
+                <button class="side-bar-button">About us</button>
+            </div>
+        </div>
+    </aside>
+
+    <header>
+        <div id="titleBar">
+            <div id="three-line-box" onclick="displaySidebar()">
+                <div class="three-line"></div>
+                <div class="three-line"></div>
+                <div class="three-line"></div>
+            </div>
+            <nav>
+                <button>Food menu</button>
+                <button>About us</button>
+            </nav>
+            <div id="title-box">
+                <img src="./pic.png" alt="" id="my-profile-pic">
+                <p id="title">Coody's store</p>
+            </div>
+            <div id="search-bar-box">
+                <input type="text" id="search-bar" placeholder="Search..">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="introduction-text-box">
+            <p id="introduction-text"><i id="B">B</i><i id="after-B">eggers can't be choosers.”</i></p>
+            <div id="under-inroduction-text">Our website is based on this motto.</div>
+        </div>
+        <div id="info-introduction-text-box">
+            <p id="info-introduction-text">And for that reason don't expect us to change the menu anytime soon.</p>
+        </div>
+        <div id="main-text-box">
+            <p>We made this website for starving poor people. We are helping them by giving wide variety of foods for free. For more information visit our <a href="">blog</a>. You can support us <a href="">here</a>.</p>
+        </div>
+        <div id="introduction-dish-text">
+            Our dish includes:
+            <hr>
+        </div>
+        <div id="dish-box">
+            <div class="dish">
+                <div id="first-dish">
+                    <img src="./jelabi.jpg" alt="">
+                </div>
+                <div class="dish-name">Jelabi</div>
+            <div class="purchase-button">
+                <div class = 'purchase-button-div'>
+                    <img src="./shopping-cart.png" alt="" style="display: block;">
+                    <button>Purchase for $0!</button>
+                </div>
+            </div>
+            </div>
+            <div class="dish">
+                <div id="second-dish">
+                    <img src="./pani-puri.jpg" alt="">
+                </div>
+                <div class="dish-name">Pani puri</div>
+            <div class="purchase-button">
+                <div class = 'purchase-button-div'>
+                    <img src="./shopping-cart.png" alt="" style="display: block;">
+                    <button>Purchase for $0!</button>
+                </div>
+            </div>
+            </div>
+            <div class="dish">
+                <div id="third-dish">
+                    <img src="./curry.jpg" alt="">
+                </div>
+                <div class="dish-name">Curry</div>
+            <div class="purchase-button">
+                <div class = 'purchase-button-div'>
+                    <img src="./shopping-cart.png" alt="" style="display: block;">
+                    <button>Purchase for $0!</button>
+                </div>
+            </div>
+            </div>
+            <div class="dish">
+                <div id="forth-dish">
+                    <img src="./Cookie.webp" alt="">
+                </div>
+            <div class="dish-name">Cookie</div>
+            <div class="purchase-button">
+                <div class = 'purchase-button-div'>
+                    <img src="./shopping-cart.png" alt="" style="display: block;">
+                    <button onclick="alertYou()">Purchase for $10000</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="after-dish-text">
+            <p>Feel free to choose any dish from my country. :)</p>
+        </div>
+    </main>
+    <br>
+    <br>
+    <div class="three-dots"></div>
+    <div class="three-dots"></div>
+    <div class="three-dots"></div>
+    <footer>
+        <div id="footer-box">
+            <div id="copyright-footer-text">
+                © 2023 Coodyboy. All Rights Reserved. Unauthorized use or reproduction of Coody's store is prohibited.
+            </div>
+            <img src="./twitter.png" alt="">
+            <span><a href="https://twitter.com/?lang=en" target="_blank">Twitter</a></span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
