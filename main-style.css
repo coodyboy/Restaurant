@@ -4,37 +4,41 @@
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
-    #introduction-text{
-        font-family: Roboto;
-        font-size: 1.5rem;
-        margin-bottom: 1px;
-        color:rgb(0, 0, 0);
-    }
-    p#introduction-text::before{
-        content: '“';
-        font-size: 4rem;
-    }
-    #B{
-        font-size: 4rem;
-    }
-    #after-B{
-        font-weight:normal;
-    }
-    #under-inroduction-text{
-        text-align: end;
-        color:rgb(0, 0, 0) ;
-    }
 }
+
+#introduction-text{
+    font-family: Roboto;
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+    color:rgb(0, 0, 0);
+}
+p#introduction-text::before{
+    content: '“';
+    font-size: 4rem;
+}
+#B{
+    font-size: 4rem;
+}
+#after-B{
+    font-weight:normal;
+}
+#under-inroduction-text{
+    text-align: end;
+    color:rgb(0, 0, 0) ;
+}
+
+
+
 #info-introduction-text-box{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 66px;
     height: 111px;
-    #info-introduction-text{
-        font-family: Lato;
-        color: black;
-    }
+}
+#info-introduction-text{
+    font-family: Lato;
+    color: black;
 }
 #main-text-box{
     padding: 20px;
@@ -67,10 +71,10 @@
     width: 5rem;
     height: 5rem;
     overflow: hidden;
-    img{
-        width: 5rem;
-        height: 5rem;
-    }
+}
+#first-dish>img{
+    width: 5rem;
+    height: 5rem;
 }
 #second-dish{
     border: 2px solid;
@@ -78,10 +82,10 @@
     width: 5rem;
     height: 5rem;
     overflow: hidden;
-    img{
-        width: 5rem;
-        height: 5rem;
-    }
+}
+#second-dish>img{
+    width: 5rem;
+    height: 5rem;
 }
 #third-dish{
     border: 2px solid;
@@ -89,10 +93,10 @@
     width: 5rem;
     height: 5rem;
     overflow: hidden;
-    img{
-        width: 5rem;
-        height: 5rem;
-    }
+}
+#third-dish>img{
+    width: 5rem;
+    height: 5rem;
 }
 #forth-dish{
     border: 2px solid;
@@ -100,10 +104,10 @@
     width: 5rem;
     height: 5rem;
     overflow: hidden;
-    img{
-        width: 5rem;
-        height: 5rem;
-    }
+}
+#forth-dish>img{
+    width: 5rem;
+    height: 5rem;
 }
 .dish{
     display: flex;
@@ -126,23 +130,23 @@
 }
 
 .purchase-button{
-    img{
+    &>div>img{
         width: 1rem;
         height: 1rem;
     }
-    .purchase-button-div{
-        display: flex;
-        gap:7px;
-        button{
-            color: aliceblue;
-            border-radius: 11px;
-            background-color: rgb(84, 84, 219);
-            cursor: pointer;
-            font-size: 0.6rem;
-        }
-        button:hover{
-            background-color: rgb(31, 31, 161);
-        }
+}
+.purchase-button-div{
+    display: flex;
+    gap:7px;
+    & >button{
+        color: aliceblue;
+        border-radius: 11px;
+        background-color: rgb(84, 84, 219);
+        cursor: pointer;
+        font-size: 0.6rem;
+    }
+    &>button:hover{
+        background-color: rgb(31, 31, 161);
     }
 }
 
@@ -169,18 +173,18 @@
     padding: 3rem;
     background-color: rgb(26, 24, 24);
     height:100px ;
-    #copyright-footer-text{
-        color: rgb(255, 254, 253);
-    }
+}
+#copyright-footer-text{
+    color: rgb(255, 254, 253);
 }
 footer{
-    img{
+    &>div>img{
         width:40px;
         height:40px;
         position: relative;
         top:20px;
     }
-    span{
+    &>div>span{
         color:rgb(66, 66, 138);
         font-family: Roboto;
         font-size: 15px;
