@@ -7,7 +7,7 @@
     height: 60%;
     background-color: rgb(192, 168, 168);
     z-index: 1;
-    img{
+    & img{
         position: relative;
         left: 11px;
         top:11px;
@@ -15,26 +15,26 @@
         width: 30px;
         cursor: pointer;
     }
-    img:hover{
+    & img:hover{
         transform: scale(1.2);
     }
-    #side-bar-title{
+    & #side-bar-title{
         text-align: center;
         font-weight: bolder;
         font-size: 20px;
     }
-    #side-bar-main{
+    & #side-bar-main{
         margin-top: 11px;
         font-size: large;
     }
-    #side-bar-button-box{
+    & #side-bar-button-box{
         margin-top: 10px;
-        .side-bar-button{
+        & .side-bar-button{
             font-size: 20px;
             border-radius: 11px;
             cursor: pointer;
         }
-        .side-bar-button:active{
+        & .side-bar-button:active{
             transform: scale(0.9);
         }
     }
